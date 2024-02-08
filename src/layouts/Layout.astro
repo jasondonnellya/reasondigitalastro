@@ -8,6 +8,12 @@ interface Props {
 
 const { title } = Astro.props;
 
+import globalStore from '../store/globalStore';
+import navItemsJSON from '../data/nav-items.json';
+
+const store = globalStore();
+store.setNavItems(navItemsJSON.navItems);
+
 import '../assets/css/import.css';
 ---
 
