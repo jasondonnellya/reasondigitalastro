@@ -5,7 +5,7 @@ import HelpSection from '../components/HelpSection.vue';
 import HeroSection from '../components/HeroSection.vue';
 import WhatWeDoSection from '../components/WhatWeDoSection.vue';
 
-const catFact =  await fetch('/cat-fact').catch(err => {});
+const catFact = await fetch('/api/cat-fact').catch(err => {});
 ---
 
 <Layout title="Home">
