@@ -1,0 +1,29 @@
+---
+import SiteHeader from '../components/SiteHeader.vue';
+import SiteNavbar from '../components/SiteNavbar.vue';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+import '../assets/css/import.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+    <SiteHeader />
+    <SiteNavbar />
+		<slot />
+	</body>
+</html>

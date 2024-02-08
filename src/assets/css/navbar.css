@@ -1,0 +1,16 @@
+.site-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 var(--padding-large);
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--gray);
+
+  .site-navbar__link {
+    padding: var(--padding-small);
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+  }
+}

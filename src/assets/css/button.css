@@ -1,0 +1,70 @@
+.site-button {
+  padding: var(--padding-xsmall) var(--padding-button);
+  color: var(--black);
+  font-size: var(--font-xsmall);
+  font-family: var(--font-primary);
+  font-weight: 600;
+  width: fit-content;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.site-button--red {
+  background: var(--red);
+  color: var(--white);
+}
+
+.site-button--rounded {
+  border: solid;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.site-button--border {
+  border: solid;
+  border-color: var(--black);
+}
+
+.site-button--border-sides {
+  border-left: solid;
+  border-right: solid;
+  border-width: 1px;
+  border-color: var(--gray);
+}
+
+.site-button--border-bottom {
+  position: relative;
+}
+
+.site-button--border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--primary);
+  height: 3px;
+  width: 100%;
+}
+
+.site-button--transparent {
+  background: transparent;
+}
+
+.site-button--inverted {
+  background: transparent;
+  color: var(--white);
+  
+  &.site-button--border {
+    border-color: white;
+    &.site-button--red {
+      border-color: black;
+    }
+  }
+  
+  &.site-button--red {
+    color: var(--red);
+    background: var(--white);
+  }
+}

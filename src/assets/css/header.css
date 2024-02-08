@@ -1,0 +1,15 @@
+.site-header {
+  padding: 0 var(--padding-large);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--gray);
+
+  .site-button {
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+  }
+}

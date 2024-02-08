@@ -1,0 +1,34 @@
+:root {
+  /* colors */
+  --primary: #497C8F;
+  --secondary: #478077;
+  --red: #BD324B;
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #ECECEC;
+
+  /* font family */
+  --font-primary: 'Open Sans';
+  --font-secondary: sans-serif;
+
+  /* font sizes */
+  --font-xlarge: 56px;
+  --font-large: 26px;
+  --font-normal: 22px;
+  --font-small: 18px;
+  --font-xsmall: 12px;
+
+  /* padding */
+  --padding-large: 35px;
+  --padding: 20px;
+  --padding-small: 10px;
+  --padding-xsmall: 5px;
+
+  --padding-button: 15px;
+
+  /* margin */
+  --margin-small: 10px;
+
+  /* grid */
+  --gap: 20px;
+}

@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  &.grid--4 {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  &.grid--justify-center {
+    justify-content: center;
+  }
+
+  &.grid--gap {
+    gap: 15px;
+  }
+
+  &.grid--white {
+    background: var(--white);
+    color: var(--black);
+  }
+
+  .grid-item {
+    padding: 20px var(--padding-large);
+  }
+}
+
+.text-center {
+  text-align: center;
+}

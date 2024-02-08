@@ -1,0 +1,99 @@
+/*
+  Ideally this code would use Sass but for this test I have opted to use core CSS.
+  Using Sass preprocessor this css would look much better using Sass syntax with BEM for example:
+
+    .site-section {
+      &__title {
+
+      }
+    }
+*/
+
+.site-section {
+  padding: var(--padding-large);
+  display: grid;
+  gap: var(--gap);
+  grid-auto-rows: min-content;
+
+  max-width: 1000px;
+  margin: auto;
+
+
+  .site-section__title {
+    font-size: var(--font-large);
+    font-family: var(--font-primary);
+    font-weight: 600;
+  }
+
+  .site-section__help-box {
+    background: var(--white);
+    padding: var(--padding-large);
+    font-size: var(--font-large);
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    span {
+      font-family: var(--font-primary);
+      color: var(--primary);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}
+
+.site-section--hero {
+  .site-section__title {
+    font-size: var(--font-xlarge);
+    background: var(--primary);
+    color: var(--white);
+    padding: var(--padding-small);
+    width: 66%;
+  }
+
+  p {
+    background: var(--white);
+    color: var(--primary);
+    padding: var(--padding-small);
+    width: 50%;
+  }
+
+  background: url('https://picsum.photos/2000/2000');
+  background-size: 100%;
+  background-position: 0, 50%;
+}
+
+.site-section--about {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 0;
+
+  > :first-child {
+    background: url('https://picsum.photos/1000/1000');
+    background-size: 100%;
+    background-position: 0, 50%;
+  }
+
+  > :nth-child(2) {
+    background: var(--secondary);
+    color: var(--white);
+
+    padding: var(--padding);
+    display: grid;
+    gap: var(--gap);
+    grid-auto-rows: min-content;
+  }
+}
+
+.site-section--primary {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.site-section--gray {
+  background: var(--gray);
+  color: var(--black);
+}

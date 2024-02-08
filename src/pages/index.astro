@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AboutSection from '../components/AboutSection.vue';
+import HelpSection from '../components/HelpSection.vue';
+import HeroSection from '../components/HeroSection.vue';
+import WhatWeDoSection from '../components/WhatWeDoSection.vue';
+
+import globalStore from '../store/globalStore';
+import navItemsJSON from '../data/nav-items.json';
+
+const store = globalStore();
+store.setNavItems(navItemsJSON.navItems);
+
+const catFact = 'Loading cat fact...';
+---
+
+<Layout title="Home">
+  <div>
+    <HeroSection />
+    <AboutSection />
+    <div class="site-section text-center">
+      { catFact }
+    </div>
+    <HelpSection />
+    <WhatWeDoSection />
+  </div>
+</Layout>

@@ -1,0 +1,28 @@
+{
+  "navItems": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "What we do",
+      "href": "/lorem-ipsum"
+    },
+    {
+      "label": "The digital divide",
+      "href": "/lorem-ipsum"
+    },
+    {
+      "label": "Get involved",
+      "href": "/lorem-ipsum"
+    },
+    {
+      "label": "Our network",
+      "href": "/lorem-ipsum"
+    },
+    {
+      "label": "Insights",
+      "href": "/lorem-ipsum"
+    }
+  ]
+}
