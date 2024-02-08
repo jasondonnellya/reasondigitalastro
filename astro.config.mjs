@@ -19,7 +19,7 @@ export default defineConfig({
     mode: 'directory',
     routes: {
       strategy: 'include',
-      include: ['/index.html'],
+      include: ['/*'],
     },
   })
 });
