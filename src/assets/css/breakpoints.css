@@ -1,0 +1,47 @@
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    &.grid--4 {
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .site-section {
+    .site-section__help-box {
+      > div {
+        display: grid;
+        text-align: center;
+      }
+    }
+  }
+  
+  .site-section--hero {
+    .site-section__title {
+      width: 100%;
+    }
+    p {
+      width: 66%;
+    }
+  }
+
+  .grid {
+    display: grid;
+    &.grid--4 {
+      grid-template-columns: auto;
+    }
+  }
+
+  .site-navbar__link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .site-section--hero {
+    p {
+      width: 100%;
+    }
+  }
+}

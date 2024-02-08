@@ -8,9 +8,11 @@
         <span>an individual</span>
         and I
         <span>want to learn</span>
-        <button class="site-button site-button--rounded site-button--red">
-          Start now
-        </button>
+        <div class="text-center">
+          <button class="site-button site-button--rounded site-button--red">
+            Start now
+          </button>
+        </div>
       </div>
     </div>
   </div>
