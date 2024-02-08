@@ -4,5 +4,14 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue({ appEntrypoint: '/src/main' })]
+  output: 'static',
+  integrations: [vue({
+    appEntrypoint: '/src/main',
+    // https://github.com/withastro/astro/issues/9328
+    template: {
+      transformAssetUrls: {
+        includeAbsolute: false,
+      },
+    }
+  })]
 });

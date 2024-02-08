@@ -5,7 +5,7 @@ import HelpSection from '../components/HelpSection.vue';
 import HeroSection from '../components/HeroSection.vue';
 import WhatWeDoSection from '../components/WhatWeDoSection.vue';
 
-const catFact = 'Loading cat fact...';
+const catFact =  await fetch('/cat-fact').catch(err => {});
 ---
 
 <Layout title="Home">
@@ -13,7 +13,7 @@ const catFact = 'Loading cat fact...';
     <HeroSection />
     <AboutSection />
     <div class="site-section text-center">
-      { catFact }
+      <p>Cat fact: { catFact }</p>
     </div>
     <HelpSection />
     <WhatWeDoSection />
