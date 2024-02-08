@@ -5,7 +5,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  output: 'hybrid',
+  output: 'static',
   integrations: [vue({
     appEntrypoint: '/src/main',
     // https://github.com/withastro/astro/issues/9328
@@ -15,17 +15,4 @@ export default defineConfig({
       },
     }
   })],
-  adapter: cloudflare({
-    mode: 'directory',
-    routes: {
-      strategy: 'include',
-      include: [
-        '/index',
-        '/api/*'
-      ],
-      exclude: [
-        '/*'
-      ]
-    },
-  })
 });
