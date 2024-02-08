@@ -1,7 +1,7 @@
 <template>
   <nav class="site-navbar">
     <div>
-      <img src="../assets/images/placeholder-logo.png" width="120" />
+      <img src="/images/placeholder-logo.png" width="120" />
     </div>
     <div>
       <a class="site-navbar__link" v-for="{ label, href } in navItems" :key="label" :href="href">
