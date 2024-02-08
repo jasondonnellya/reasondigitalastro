@@ -19,7 +19,13 @@ export default defineConfig({
     mode: 'directory',
     routes: {
       strategy: 'include',
-      include: ['/*'],
+      include: [
+        '/index',
+        '/api/*'
+      ],
+      exclude: [
+        '/*'
+      ]
     },
   })
 });
